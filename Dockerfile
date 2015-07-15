@@ -9,7 +9,7 @@ RUN wget http://download.autodesk.com/us/support/files/maya_2014_service_pack4/A
     rm maya.tgz
 
 # Install Maya
-RUN rpm -Uvh /maya/Maya*.rpm && /
+RUN rpm -Uvh /maya/Maya*.rpm && \
     rm -rf /maya
 
 # Make mayapy the default Python
