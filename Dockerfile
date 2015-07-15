@@ -21,9 +21,9 @@ ENV MAYA_LOCATION=/usr/autodesk/maya2014-x64/
 ENV PATH=$MAYA_LOCATION/bin:$PATH
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
-    python get-pip.py
+    mayapy get-pip.py
 
-RUN python -m pip install \
+RUN mayapy -m pip install \
  nose
 
 # Cleanup
